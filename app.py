@@ -5,7 +5,7 @@ from pypdf import PdfReader
 from docx import Document
 
 env = dotenv_values(".env")
-openai_client = OpenAI(api_key=env["OPENAI_API_KEY"])
+openai_client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # --- WYBÓR MODELU W PANELU BOCZNYM ---
 st.sidebar.title("Ustawienia bota")
